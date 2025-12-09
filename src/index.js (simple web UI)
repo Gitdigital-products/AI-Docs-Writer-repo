@@ -1,0 +1,10 @@
+const express = require('express');
+const app = express();
+app.use(express.json());
+app.get('/health', (req, res) => res.json({ ok: true }));
+app.post('/generate', (req, res) => {
+  // stub: in production call LLM with prompt template
+  return res.json({ ok: true, message: 'Generation stub' });
+});
+app.listen(process.env.PORT || 3020, () => console.log('AI Docs Writer listening'));
+module.exports = app;
