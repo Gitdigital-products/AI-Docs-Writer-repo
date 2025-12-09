@@ -1,0 +1,10 @@
+
+{
+  "output": "./docs",
+  "style": "technical",
+  "tone": "professional",
+  "includeApiReference": true,
+  "includeExamples": true,
+  "defaultModel": "gpt-4.1",
+  "templatesPath": "./templates"
+}
